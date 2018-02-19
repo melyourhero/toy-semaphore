@@ -43,11 +43,9 @@ class Semaphore {
             const nextFunc = () => resolve(this.processQueue.bind(this));
 
             if (this.counter < this.permits) {
-                logger.info('proccesing');
                 this.counter++;
                 setImmediate(nextFunc);
             } else {
-                logger.info('pushed');
                 this.queue.push(nextFunc);
             }
         });
