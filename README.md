@@ -1,4 +1,4 @@
-# Toy RxJS
+# Toy Semaphore
 
 A tiny implementation of semaphore that actually works, for learning.
 
