@@ -6,6 +6,15 @@ A tiny implementation of semaphore that actually works, for learning.
 
 `git clone git@github.com:melyourhero/toy-semaphore.git`
 
+`cd toy-semaphore`
+
+`npm i`
+
+`npm start`
+
+Then try to connect to server, using several curl connections
+
+This example simply restrict permission to critical section for two user at time.
 ```typescript
 const semaphore = new Semaphore(2);
 
@@ -17,4 +26,7 @@ http.createServer(async (req: IncomingMessage, res: ServerResponse): Promise<voi
 });
 ```
 
-This example simply restrict permission to critical section for two user at time.
+For testing:
+
+`npm run test`
+
