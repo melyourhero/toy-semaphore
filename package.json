@@ -8,19 +8,6 @@
     "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./main.ts",
     "test": "./node_modules/.bin/ts-node ./test/setup/runner.ts"
   },
-  "nyc": {
-    "include": [
-      "lib/**/*.ts"
-    ],
-    "extension": [
-      ".ts"
-    ],
-    "require": [
-      "ts-node/register"
-    ],
-    "sourceMap": true,
-    "instrument": true
-  },
   "author": "melyourhero",
   "keywords": [
     "js",
